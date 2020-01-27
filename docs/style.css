@@ -4,32 +4,32 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 header{
-    margin-bottom: 5%;
+    margin-bottom: 10px;
     height: 15vh;
     background-color: orangered;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main{
+#videos{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 5%;
     row-gap: 5%;
-    padding-left: 10%;
+    margin-left: 10px;
     padding-right: 10%;
     padding-bottom: 5%;
 }
 a{
     color: black;
 }
-main>a{
+#videos>a{
     color: white;
     text-decoration:none;
 }
 img{
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 200px;
 }
 input{
     margin-left: 1%;
@@ -58,10 +58,54 @@ footer>p{
     color: white;
 }
 #video{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    text-align: center;
+    width: 70%;
+    margin-left: 10px;
 }
-video{
+
+li{
+    list-style-type: none;
+}
+
+main{
+    display: flex;
+}
+#menu{
+    border: solid 1px black;
+    width: 10%;
+}
+
+#menu>ul>li{
+    margin-bottom: 10px;
+}
+#menu>ul{
+    padding-left: 10px;
+}
+
+#descricaovideo{
+    display: flex;
+}
+
+#descricaovideo>h3{
+    width: 20%;
+}
+#botoes{
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.blocolateral{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.blocolateral>img{
+    width: 80px;
+    height: 80px;
+}
+
+video{
+    width: 100%;
 }
